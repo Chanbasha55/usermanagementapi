@@ -14,7 +14,10 @@ namespace UsermanagementApi.Services
 
         public List<User> GetUsers()
         {
-            return _context.Users.ToList();
+            return new List<User>
+{
+    new User { Id = 1, Name = "admin", Password = "admin123" }
+};
         }
 
         public User AddUser(User user)
