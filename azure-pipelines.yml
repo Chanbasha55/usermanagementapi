@@ -38,10 +38,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
 
-- task: AzureWebApp@1
-  displayName: 'Deploy to Azure Web App'
-  inputs:
-    azureSubscription: 'bashausermanagement'
-    appType: 'webApp'
-    appName: 'userwebapp'
-    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
