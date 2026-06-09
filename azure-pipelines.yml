@@ -41,7 +41,7 @@ steps:
 - task: AzureWebApp@1
   displayName: 'Deploy to Azure Web App'
   inputs:
-    azureSubscription: 'usermanagementapi-cbasha2026'
+    azureSubscription: 'bashausermanagement'
     appType: 'webApp'
     appName: 'usermanagementapi-cbasha2026'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
