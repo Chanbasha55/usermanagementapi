@@ -43,5 +43,5 @@ steps:
   inputs:
     azureSubscription: 'bashausermanagement'
     appType: 'webApp'
-    appName: 'usermanagementapi-cbasha2026'
+    appName: 'userwebapp'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
